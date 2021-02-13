@@ -1,0 +1,16 @@
+name: fial3d
+version: 0.0.2
+summary: Four in a line game in 3d with ascii graphics 
+description: >
+  FIAL3D is a console based 3D 4-in-a-row game made with ascii graphics. FIAL3D stands for Four.In.A.Line.3D.
+
+confinement: strict
+
+parts:
+  fial3d:
+    plugin: dump
+    source: fial3d.tgz
+
+apps:
+  fial3d:
+    command: fial3d
